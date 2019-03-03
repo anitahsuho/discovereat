@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<html>
+<head>
+<title>DiscoverEat</title>
+<style>
+  h1{
+	color : white;
+	font-family : courier;
+  }
+</style>
+</head>
+<body>
+<!--<div style='position:absolute;z-index:0;left:0;top:0;width:100%;'>
+  <img src='TimesSquareBG.jpg'style='width:100%;' />
+</div>
+-->
+<!--<img SRC="gimpisforpussies.png" class="blackbox"/>-->
+<!--<img SRC="gimpisforpussies2.png" class="blackbox2"/>-->
+<!--<ul>-->
+
+<!--<li><a class="active" href="homepage.html">Home</a></li>-->
+<!--<li><a href="about.html">About</a></li>-->
+
+
+<!--</ul>-->
+<!--<div id = "onlyImage">-->
+<!--    <img src = "logo.png" style="width:430px;height:180px;">-->
+<!--</div>-->
+<div class="center">
+	<div class="titletext"><h1 class="title" style="margin-bottom:0px">DiscoverEat</h1> </div>
+	<div class="midtext"><h1 class="title" style="margin-top:0px">Find and Give Food</h1> </div>
+	<div id = "buttonContainer">
+		<div id = "buttonL" class="button">
+			<a href = "#" class="btn btn-sm animated-button victoria-three" onclick="loginpost()">Post</a>
+		</div>
+		
+		<div id = "buttonR" class="button">
+			<a href = "#" class="btn btn-sm animated-button victoria-three" onclick="loginfind()">Find</a>
+		</div>
+	</div>
+	<!--<div>-->
+	<!--    <a href = "#" class="btn btn-sm animated-button victoria-three" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
+	<!--</div>-->
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="#" onsubmit="return toggleSignIn()">
+	<div class="imgcontainer">
+	  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+	</div>
+
+	<div class="container">
+	  <label for="uname"><b>Username</b></label>
+	  <input type="text" placeholder="Enter Username" id="email" required>
+
+	  <label for="psw"><b>Password</b></label>
+	  <input type="password" placeholder="Enter Password" id="password" required>
+
+	  <button type="submit">Login</button>
+	  <label>
+		<input type="checkbox" checked="unchecked" name="remember"> Remember me
+	  </label>
+	</div>
+
+	<div class="container" style="background-color:#f1f1f1">
+	  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	  <span class="psw"> <a href="#" onclick = "newUser()">New User?</a></span>
+	</div>
+  </form>
+</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="firebasingse.js"></script>
+
+  
+</body>
+</html>

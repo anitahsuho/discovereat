@@ -1,0 +1,74 @@
+<link rel="stylesheet" type="text/css" href="post.css">
+<link rel="stylesheet" type="text/css" href="navBar.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<html>
+<head>
+<title>DiscoverEat</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="..">Home</a>
+				</li>
+				<li>
+					<a href="#">Account</a>
+				</li>
+				<li>
+					<a href=".." onclick = "logout()">Logout</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!--<div id = "header">-->
+	<!--    <br><br><br>-->
+	<!--    <button onclick = "goHome()" style="font-size:22px;color:black;font-family:courier;font-weight:bold">Home</button>-->
+	<!--    <button style="font-size:22px;color:black;font-family:courier;font-weight:bold">Account</button>-->
+	<!--    <button onclick = "logout()" style="font-size:22px;color:black;font-family:courier;font-weight:bold">Logout</button>-->
+	<!--    <br><br>-->
+	<!--</div>-->
+	<div id = "buttonContainer">
+		<div id = "buttonL">
+			<a href = "#" class=" selected" >Post</a>
+		</div>
+		
+		<div id = "buttonR">
+			<a href = "../find.html" class="btn btn-sm animated-button victoria-three" >Find</a>
+		</div>
+	</div>
+	<div class="container">
+		<form id="myform">
+
+			<label style="font-size:18px;color:white;font-family:courier;" for="title">Title</label>
+			<input type="text" id="fname" name="title" placeholder="Description of your food..">
+		
+			<label style="font-size:18px;color:white;font-family:courier;" for="lname">Start Time</label><br>
+			<input type="time" id="timeStart" name="lastname" placeholder="Start of time interval you're offering the food..">
+
+			<br \>
+			<br \>
+		
+			<label style="font-size:18px;color:white;font-family:courier;" size="40px" for="lname">End Time</label><br>
+			<input type="time" id="timeEnd" name="lastname" placeholder="End of time interval you're offering the food..">
+			<br \>
+			<br \>
+			<label style="font-size:18px;color:white;font-family:courier;" for="location">Location</label>
+			<input type="text" id="loc" name="lastname" placeholder="General Location">
+			
+		
+			<label style="font-size:18px;color:white;font-family:courier;" for="details">Details</label>
+			<textarea id="details" name="details" placeholder="Details about pickup, food, etc..." style="height:200px"></textarea>
+		
+			<input style="float: right;" type="button" value="Submit" onclick="writeUserData(document.getElementById('fname'), document.getElementById('timeStart'), document.getElementById('timeEnd'),document.getElementById('loc'), document.getElementById('details')); document.getElementById('myform').reset();" >
+			<br><br>
+		</form>
+	</div>
+<script type="text/javascript" src="post.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script type="text/javascript" src="firebasingse.js"></script>
+
+
+</body>

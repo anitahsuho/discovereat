@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="post.css">
+<link rel="stylesheet" type="text/css" href="navBar.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<html>
+<head>
+<title>DiscoverEat</title>
+</head>
+<body>
+	<header>
+	</header>
+	<!--<div id = "header">-->
+	<!--    <br><br><br>-->
+	<!--    <button onclick = "goHome()" style="font-size:22px;color:black;font-family:courier;font-weight:bold">Home</button>-->
+	<!--    <button style="font-size:22px;color:black;font-family:courier;font-weight:bold">Account</button>-->
+	<!--    <button onclick = "logout()" style="font-size:22px;color:black;font-family:courier;font-weight:bold">Logout</button>-->
+	<!--    <br><br>-->
+	<!--</div>-->
+	<br><br>
+	<div class="container">
+		<form id="myform2">
+
+			<label style="font-size:18px;color:white;font-family:courier;" for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Ex: anini@panini.com"> 
+		    
+		    <label style="font-size:18px;color:white;font-family:courier;" for="password">Password</label><br>
+			<input type="password" id="password" name="password"><br><br>
+			
+			<label style="font-size:18px;color:white;font-family:courier;" for="password">Re-type Password</label><br>
+			<input type="password" id="password" name="password">
+			<br \>
+			<br \>
+		
+			
+			<label style="font-size:18px;color:white;font-family:courier;" for="school">School</label>
+			<input type="text" id="school" name="school" placeholder="Ex: University of Virginia">
+			<br>
+			<label style="font-size:18px;color:white;font-family:courier;" for="loc">Race</label><br> 
+            <input type="radio" name="race" value="asian"> Asian<br>
+            <input type="radio" name="race" value="australian"> Australian<br>
+            <input type="radio" name="race" value="black"> Black<br>
+            <input type="radio" name="race" value="mexican"> Mexican<br>  
+			<input type="radio" name="race" value="white"> White<br>
+            <input type="radio" name="race" value="other"> Other<br>
+            <input type="radio" name="race" value="nah"> Prefer not to answer<br>  <br> 
+            
+			<label style="font-size:18px;color:white;font-family:courier;" for="age">Age</label> <br>
+			<input type="number" id="age" name="age" placeholder="18">
+		    <br><br>
+			<label style="font-size:18px;color:white;font-family:courier;" for="phone">Phone Number</label> <br>
+		    <input type="tel" id="phone" name="phone"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+			<input style="float: right;" type="button" value="Submit" onclick="createUser()"><br>
+		</form>
+	</div>
+<script type="text/javascript" src="newUser.js"></script>
+<script type="text/javascript" src="post.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script type="text/javascript" src="firebasingse.js"></script>
+
+
+</body>

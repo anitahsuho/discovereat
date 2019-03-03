@@ -1,0 +1,187 @@
+html{
+	background-image: url(fruit.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #393939;
+	display: flex;
+	/*background-color: blue;*/
+	justify-content: center;
+	align-items: center;
+	height:100vh;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width:80vw;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+	border-radius: 5px;
+	/*background-color: #f2f2f2;*/
+	padding: 20px;
+	background-color: rgba(100,100,100,.8);
+	height:75vh;
+	overflow-y: auto;
+	padding-bottom: 0;
+	width:70vw;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #3d3d3d;
+  }
+
+.selected{
+	border: 2px solid #000000;
+	font-family: 'Raleway', sans-serif;
+    width: 200px;
+    opacity: 1;
+    background: #FFF;
+    
+    position: relative;
+    display: block;
+    margin: 5px auto 0;
+    padding: 5px 5px;
+    padding-bottom: 8px;
+    color: #000;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+a.animated-button.victoria-three {
+    border: 2px solid #FFF;
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+}
+a.animated-button.victoria-three:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+    height: 140%;
+    opacity: 1;
+}
+a.animated-button.victoria-four {
+    border: 2px solid #FFF;
+}
+a.animated-button.victoria-four:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-three {
+    border: 2px solid #FFF;
+}
+a.animated-button.victoria-three:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited, button.animated-button:link, button.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 5px auto 0;
+    padding: 5px 5px;
+    padding-bottom: 8px;
+    color: #FFF;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after, button.animated-button:link:after, button.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover, button.animated-button:link:hover, button.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after, button.animated-button:link:hover:after, button.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+}

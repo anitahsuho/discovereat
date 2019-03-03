@@ -1,0 +1,265 @@
+html{
+	background-image: url(goo2.jpg);
+	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #393939;
+    display: flex;
+    /*background-color: blue;*/
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.titletext{
+    text-align: center;
+    font-family: verdana;
+    font-size: 50px;
+    /*height: 70px;*/
+    padding-bottom: 20px;
+}
+
+.title{
+    padding-bottom: 10px;
+    margin:10px;
+    
+}
+
+.midtext{
+    text-align: center;
+    font-family: verdana;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    /*background-color: #f1f1f1;*/
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonContainer{
+    display: flex;
+    
+}
+
+.button{
+    margin:10px;
+}
+
+#buttonL{
+    
+}
+
+#buttonR{
+    
+}
+
+a.animated-button.victoria-three {
+    border: 2px solid #FFF;
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+}
+a.animated-button.victoria-three:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+    height: 140%;
+    opacity: 1;
+}
+a.animated-button.victoria-four {
+    border: 2px solid #FFF;
+}
+a.animated-button.victoria-four:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-three {
+    border: 2px solid #FFF;
+}
+a.animated-button.victoria-three:after {
+    background: #FFF;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited, button.animated-button:link, button.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 5px auto 0;
+    padding: 5px 5px;
+    padding-bottom: 8px;
+    color: #FFF;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after, button.animated-button:link:after, button.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover, button.animated-button:link:hover, button.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after, button.animated-button:link:hover:after, button.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+}
+
+/* The Modal (background) */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
